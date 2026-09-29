@@ -1,0 +1,80 @@
+#!/usr/bin/env bash
+set -Eeuo pipefail
+
+STATE=/var/lib/pdfsec/ghidra-mcp
+PIDFILE=$STATE/server.pid
+LOGFILE=$STATE/server.log
+VENV=/opt/pdfsec/venvs/mcpyghidra
+GHIDRA_INSTALL_DIR=/opt/ghidra/current
+export GHIDRA_INSTALL_DIR
+
+mkdir -p "$STATE"
+
+running() {
+  [[ -f $PIDFILE ]] || return 1
+  local pid
+  pid=$(cat "$PIDFILE")
+  kill -0 "$pid" 2>/dev/null
+}
+
+stop_server() {
+  if running; then
+    local pid
+    pid=$(cat "$PIDFILE")
+    kill "$pid"
+    for _ in $(seq 1 30); do
+      kill -0 "$pid" 2>/dev/null || break
+      sleep 1
+    done
+    kill -0 "$pid" 2>/dev/null && kill -KILL "$pid"
+  fi
+  rm -f "$PIDFILE"
+}
+
+case ${1:-} in
+  start)
+    binary=${2:-}
+    [[ $binary == /* && -f $binary ]] || {
+      echo "usage: pdfsec-ghidra-mcp start /absolute/path/to/binary" >&2
+      exit 2
+    }
+    stop_server
+    : >"$LOGFILE"
+    nohup "$VENV/bin/mcpyghidra-headless" "$binary" >>"$LOGFILE" 2>&1 &
+    echo $! >"$PIDFILE"
+    for _ in $(seq 1 180); do
+      if grep -q '"status"[[:space:]]*:[[:space:]]*"ready"' "$LOGFILE"; then
+        echo "Ghidra MCP ready on http://127.0.0.1:6050/mcp"
+        echo "binary=$binary"
+        exit 0
+      fi
+      running || {
+        cat "$LOGFILE" >&2
+        exit 1
+      }
+      sleep 1
+    done
+    echo "Timed out waiting for Ghidra analysis." >&2
+    tail -100 "$LOGFILE" >&2
+    exit 1
+    ;;
+  stop)
+    stop_server
+    echo "Ghidra MCP stopped"
+    ;;
+  status)
+    if running; then
+      echo "running pid=$(cat "$PIDFILE") endpoint=http://127.0.0.1:6050/mcp"
+    else
+      echo "stopped"
+      exit 1
+    fi
+    ;;
+  log)
+    tail -200 "$LOGFILE"
+    ;;
+  *)
+    echo "usage: pdfsec-ghidra-mcp {start /absolute/binary|stop|status|log}" >&2
+    exit 2
+    ;;
+esac

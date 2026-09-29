@@ -1,0 +1,172 @@
+{
+  "version": 1,
+  "skills": {
+    "address-sanitizer": {
+      "source": "trailofbits/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/testing-handbook-skills/skills/address-sanitizer/SKILL.md",
+      "computedHash": "51015e959e298b65a208139915e8f28cce5bf0dbff56e9d3077ffa32fa1b84d5",
+      "sourceCommit": "82fe8226252622fa807643bdca1710901198553a"
+    },
+    "aflpp": {
+      "source": "trailofbits/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/testing-handbook-skills/skills/aflpp/SKILL.md",
+      "computedHash": "d037a1550a4f51e74befd367c33d121881b97892de5867c55c74a279d1ff6c09",
+      "sourceCommit": "82fe8226252622fa807643bdca1710901198553a"
+    },
+    "anti-debugging-techniques": {
+      "source": "yaklang/hack-skills",
+      "sourceType": "github",
+      "skillPath": "skills/anti-debugging-techniques/SKILL.md",
+      "computedHash": "788491c037090f0f946d490a25b50930c04968f7f57f2d38a15e7281bd87f622",
+      "sourceCommit": "6fbf0bc8d5c71830d62543a308d8744606c43d7c"
+    },
+    "arbitrary-write-to-rce": {
+      "source": "yaklang/hack-skills",
+      "sourceType": "github",
+      "skillPath": "skills/arbitrary-write-to-rce/SKILL.md",
+      "computedHash": "e94fda9c91ba5d6959590d2f4fea02afe725658acacbb0598ea999176d89efc2",
+      "sourceCommit": "6fbf0bc8d5c71830d62543a308d8744606c43d7c"
+    },
+    "audit-context-building": {
+      "source": "trailofbits/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/audit-context-building/skills/audit-context-building/SKILL.md",
+      "computedHash": "aed6088124a47915aa4708e4fbb9be7383348dbb67bff2b44dd4dcde459699c7",
+      "sourceCommit": "82fe8226252622fa807643bdca1710901198553a"
+    },
+    "binary-analysis-patterns": {
+      "source": "wshobson/agents",
+      "sourceType": "github",
+      "skillPath": "plugins/reverse-engineering/skills/binary-analysis-patterns/SKILL.md",
+      "computedHash": "91d2814dd806766b7e77b2c98de66c3753384c37810ec561f1cc55ce3264034f"
+    },
+    "binary-protection-bypass": {
+      "source": "yaklang/hack-skills",
+      "sourceType": "github",
+      "skillPath": "skills/binary-protection-bypass/SKILL.md",
+      "computedHash": "419f8dd445b49ae07bc998b33486cbe4f46c4ffc21cabfa949b26bec06550666",
+      "sourceCommit": "6fbf0bc8d5c71830d62543a308d8744606c43d7c"
+    },
+    "c-review": {
+      "source": "trailofbits/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/c-review/skills/c-review/SKILL.md",
+      "computedHash": "c6d168c0b0bc90d67eb9861ce29315709cc06fe163fe672eb630ad1093d8dbba",
+      "sourceCommit": "82fe8226252622fa807643bdca1710901198553a"
+    },
+    "code-obfuscation-deobfuscation": {
+      "source": "yaklang/hack-skills",
+      "sourceType": "github",
+      "skillPath": "skills/code-obfuscation-deobfuscation/SKILL.md",
+      "computedHash": "827ae89d822b303f998ae5f50e8b92d2e131014bc8cb1fe842523dbeaea2bbf1",
+      "sourceCommit": "6fbf0bc8d5c71830d62543a308d8744606c43d7c"
+    },
+    "codeql": {
+      "source": "trailofbits/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/static-analysis/skills/codeql/SKILL.md",
+      "computedHash": "1756abbf6ee92dbe55c5f49c9b0a73db2c1514f2f57e08c46d7e8b2a26a339d8",
+      "sourceCommit": "82fe8226252622fa807643bdca1710901198553a"
+    },
+    "coverage-analysis": {
+      "source": "trailofbits/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/testing-handbook-skills/skills/coverage-analysis/SKILL.md",
+      "computedHash": "22c95cdd75bcac65d68fbc780e8da0f5a222c425adf459c6d27616df3bdaf2de",
+      "sourceCommit": "82fe8226252622fa807643bdca1710901198553a"
+    },
+    "dwarf-expert": {
+      "source": "trailofbits/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/dwarf-expert/skills/dwarf-expert/SKILL.md",
+      "computedHash": "178fb1f1547c3fe129dac40248da01e6725062bab2f6a315b3f6e4dce5f67356",
+      "sourceCommit": "82fe8226252622fa807643bdca1710901198553a"
+    },
+    "entry-point-analyzer": {
+      "source": "trailofbits/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/entry-point-analyzer/skills/entry-point-analyzer/SKILL.md",
+      "computedHash": "e2088cf00fad99469a13cd56838c307016a44d4908c5bf46591eb887f8be3634",
+      "sourceCommit": "82fe8226252622fa807643bdca1710901198553a"
+    },
+    "format-string-exploitation": {
+      "source": "yaklang/hack-skills",
+      "sourceType": "github",
+      "skillPath": "skills/format-string-exploitation/SKILL.md",
+      "computedHash": "b181416f0e664070fb8fecf77b1d3ae5e9edc10dd9004981a4f8b8de741abb34",
+      "sourceCommit": "6fbf0bc8d5c71830d62543a308d8744606c43d7c"
+    },
+    "fp-check": {
+      "source": "trailofbits/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/fp-check/skills/fp-check/SKILL.md",
+      "computedHash": "b84703ecb023c8bfc77f08d79b932a5f4baf0a3d716550117dcbd7b0e48c81a6",
+      "sourceCommit": "82fe8226252622fa807643bdca1710901198553a"
+    },
+    "fuzzing-dictionary": {
+      "source": "trailofbits/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/testing-handbook-skills/skills/fuzzing-dictionary/SKILL.md",
+      "computedHash": "c25f8beb7a6d5bf36437793fdcb0487b17ed6e2b0eae17530636da4d1e1b33ea",
+      "sourceCommit": "82fe8226252622fa807643bdca1710901198553a"
+    },
+    "fuzzing-obstacles": {
+      "source": "trailofbits/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/testing-handbook-skills/skills/fuzzing-obstacles/SKILL.md",
+      "computedHash": "2f0c8d40ff3dfb3266c54a1db0574a63228f952e94f0a511c3370d60bd6a05b5",
+      "sourceCommit": "82fe8226252622fa807643bdca1710901198553a"
+    },
+    "harness-writing": {
+      "source": "trailofbits/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/testing-handbook-skills/skills/harness-writing/SKILL.md",
+      "computedHash": "9b24f470f41500996dfd1ff420bd69d7cb10e1ace8f009171c5ec0dd7ba1747d",
+      "sourceCommit": "82fe8226252622fa807643bdca1710901198553a"
+    },
+    "heap-exploitation": {
+      "source": "yaklang/hack-skills",
+      "sourceType": "github",
+      "skillPath": "skills/heap-exploitation/SKILL.md",
+      "computedHash": "daac66da732b4791561d50eb2d3d6384e61170e4ef295327d3025695cb69b0b8",
+      "sourceCommit": "6fbf0bc8d5c71830d62543a308d8744606c43d7c"
+    },
+    "sarif-parsing": {
+      "source": "trailofbits/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/static-analysis/skills/sarif-parsing/SKILL.md",
+      "computedHash": "09560db5db1e6e4c44d403c16c69687b0614b94a1a474b0dc51cc9729f732986",
+      "sourceCommit": "82fe8226252622fa807643bdca1710901198553a"
+    },
+    "semgrep": {
+      "source": "trailofbits/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/static-analysis/skills/semgrep/SKILL.md",
+      "computedHash": "36c2159dcfbe7695d60662881c24fbd8ac54273ba73293739e0f8e3cb8410f76",
+      "sourceCommit": "82fe8226252622fa807643bdca1710901198553a"
+    },
+    "stack-overflow-and-rop": {
+      "source": "yaklang/hack-skills",
+      "sourceType": "github",
+      "skillPath": "skills/stack-overflow-and-rop/SKILL.md",
+      "computedHash": "138eb8648ea3b35538c69a74de329f1fe6762ed63a32b14545fe937a0435be43",
+      "sourceCommit": "6fbf0bc8d5c71830d62543a308d8744606c43d7c"
+    },
+    "symbolic-execution-tools": {
+      "source": "yaklang/hack-skills",
+      "sourceType": "github",
+      "skillPath": "skills/symbolic-execution-tools/SKILL.md",
+      "computedHash": "32cc7f194f15cb85627bdec2e9a2e3210807d19dcc677a0b12f9cba4baead6a7",
+      "sourceCommit": "6fbf0bc8d5c71830d62543a308d8744606c43d7c"
+    },
+    "variant-analysis": {
+      "source": "trailofbits/skills",
+      "sourceType": "github",
+      "skillPath": "plugins/variant-analysis/skills/variant-analysis/SKILL.md",
+      "computedHash": "9f72278d3264d0ac45969cd78b83be84624a4579784d202ba4463d42e194b834",
+      "sourceCommit": "82fe8226252622fa807643bdca1710901198553a"
+    }
+  }
+}

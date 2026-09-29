@@ -1,0 +1,56 @@
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+config/*.env
+!config/*.env.example
+.codex/
+
+# Research state and evidence
+workspace/research.db*
+workspace/goal.txt
+workspace/target-identity.env
+workspace/source/**
+workspace/builds/**
+workspace/campaigns/**
+workspace/corpus/**
+workspace/crashes/**
+workspace/logs/**
+workspace/subagents/**
+workspace/triage/**
+workspace/artifacts/**
+workspace/report/**
+!workspace/artifacts/.gitkeep
+!workspace/corpus/.gitkeep
+!workspace/report/.gitkeep
+
+# Notifications and local process state
+workspace/.notify-state.json
+*.pid
+*.sock
+
+# Generated analysis
+*.sarif
+*.profraw
+*.profdata
+core
+core.*
+crash-*
+id:*
+
+# Editors, Python, and operating systems
+__pycache__/
+*.py[cod]
+.venv/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Secrets and key material
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
